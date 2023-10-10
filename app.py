@@ -1,12 +1,12 @@
 from flask import Flask,request,render_template
 from stories import story
-from flask_debugtoolbar import DebugToolbarExtension
+# from flask_debugtoolbar import DebugToolbarExtension
 
 FLASK_ENV="development"
 app = Flask(__name__)
 app.config['SECRET_KEY'] = "secret"
 
-debug = DebugToolbarExtension(app)
+# debug = DebugToolbarExtension(app)
 
 
 @app.route('/')

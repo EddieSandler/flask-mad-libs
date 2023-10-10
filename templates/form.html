@@ -7,19 +7,19 @@
   <title>Mad Libs</title>
 </head>
 <body>
-  <h1>MAD LIBS</h1>
+  <section>
+<h1>MAD LIBS</h1>
+<p>Fill in the blanks</p>
 
-  <p>Fill in the blanks</p>
-  <div class='user-inputs'>
+  <div class="form-container"></div>
   <form action="/story" class="input-form">
 
     {% for word in words %}
 
-    <label for="{{ word }}">{{ word }}</label><br>
-    <input type="text" id="{{ word }}" name="{{ word }}"><br>
+    <label for="{{ word }}">{{ word }}</label><input type="text" id="{{ word }}" name="{{ word }}">
 
     {% endfor %}
-<br>
+
     <input type="submit" value="Submit">
 </form>
 </div>
