@@ -16,10 +16,11 @@
 
     {% for word in words %}
 
-    <label for="{{ word }}">{{ word }}</label><input type="text" id="{{ word }}" name="{{ word }}">
+    <label for="{{ word }}">{{ word }}</label>
+    <input type="text"class="user_input" id="{{ word }}" name="{{ word }}"><br>
 
     {% endfor %}
-
+<br>
     <input type="submit" value="Submit">
 </form>
 </div>
